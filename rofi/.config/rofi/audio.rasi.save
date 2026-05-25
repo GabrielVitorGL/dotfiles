@@ -1,0 +1,79 @@
+* {
+    bg:      #1a1b26;
+    bg-alt:  #24253a;
+    fg:      #ffffff;
+    fg-dim:  #7984A4;
+    accent:  #6a92d7;
+    urgent:  #bf616a;
+
+    background-color: transparent;
+    text-color: @fg;
+    font: "JetBrainsMono Nerd Font 13";
+}
+
+window {
+    background-color: @bg;
+    border: 2px solid;
+    border-color: @accent;
+    border-radius: 12px;
+    width: 420px;
+    padding: 12px;    location: north-east;
+    anchor: north-east;
+    x-offset: -16px;
+
+}
+
+mainbox {
+    spacing: 8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 8px 12px;
+    spacing: 8px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: @accent;
+}
+
+entry {
+    text-color: @fg;
+    placeholder: "Buscar...";
+    placeholder-color: @fg-dim;
+}
+
+message {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+textbox {
+    text-color: @fg-dim;
+    font: "JetBrainsMono Nerd Font 11";
+}
+
+listview {
+    lines: 5;
+    scrollbar: false;
+    spacing: 4px;
+}
+
+element {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
